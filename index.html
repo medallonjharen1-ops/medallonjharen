@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jharen Medallon – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     NAV
+═══════════════════════════════ -->
+<nav>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#uiux">UI/UX</a></li>
+    <li><a href="#3d">3D Projects</a></li>
+    <li><a href="#graphicdesign">Graphic Design</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"          onclick="closeMenu()">About</a>
+  <a href="#skills"         onclick="closeMenu()">Skills</a>
+  <a href="#uiux"           onclick="closeMenu()">UI/UX</a>
+  <a href="#3d"             onclick="closeMenu()">3D Projects</a>
+  <a href="#graphicdesign"  onclick="closeMenu()">Graphic Design</a>
+  <a href="#contact"        onclick="closeMenu()">Contact</a>
+</div>
+
+
+<!-- ═══════════════════════════════
+     ABOUT
+═══════════════════════════════ -->
+<section id="about">
+  <div class="about-inner">
+
+    <!--
+      IMAGE 1 – ABOUT ME PHOTO
+      When ready, replace the placeholder div below with:
+        <img class="about-photo" src="about-photo.jpg" alt="Jharen Medallon">
+      Recommended size: ~600×800 px
+    -->
+    <div class="about-photo-placeholder">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.2">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <span>about-photo.jpg<br>~600×800px</span>
+    </div>
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <div class="divider"></div>
+      <p>
+        Hi, I'm Jharen Medallon,<br>
+        a junior designer seeking an opportunity to begin my career
+        in the creative industry. I have skills in 3D modeling using
+        Blender, graphic design with Adobe Photoshop and Illustrator,
+        UI/UX design in Figma, and video editing in CapCut.
+      </p>
+      <p>
+        I'm passionate about creating visually engaging content and
+        eager to apply my skills in a professional setting while
+        continuing to learn and grow as a designer.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     SKILLS
+═══════════════════════════════ -->
+<section id="skills">
+  <div class="section-header">
+    <h2 class="section-title">Tools &amp; System</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>3D &amp; Multimedia</h3>
+      <ul>
+        <li>Blender</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Animate and Media Encoder</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Other Tools</h3>
+      <ul>
+        <li>HTML</li>
+        <li>Unity</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     UI / UX
+═══════════════════════════════ -->
+<section id="uiux">
+  <div class="section-header">
+    <h2 class="section-title">UI / UX</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <!--
+    IMAGE SLOTS – UI/UX SCREENSHOTS
+    ─────────────────────────────────
+    OPTION A  (one combined image):
+      Swap the grid below for:
+        <div class="uiux-full">
+          <img src="uiux-grid.jpg" alt="UI/UX Projects">
+        </div>
+
+    OPTION B  (9 individual screenshots – active by default):
+      Name files:  uiux-01.jpg … uiux-09.jpg
+      and place them in the same folder as this HTML file.
+  -->
+  <div class="uiux-grid">
+    <div class="uiux-item"><img src="uiux-01.jpg" alt="UI screen 1 – Main menu"      onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-02.jpg" alt="UI screen 2 – Level select"   onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-03.jpg" alt="UI screen 3 – Settings"       onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-04.jpg" alt="UI screen 4 – Loading"        onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-05.jpg" alt="UI screen 5 – Shop"           onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-06.jpg" alt="UI screen 6 – Level numbers"  onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-07.jpg" alt="UI screen 7 – Gameplay"       onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-08.jpg" alt="UI screen 8 – Level complete" onerror="this.style.display='none'"></div>
+    <div class="uiux-item"><img src="uiux-09.jpg" alt="UI screen 9 – Sign in"        onerror="this.style.display='none'"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     3D PROJECTS
+═══════════════════════════════ -->
+<section id="3d">
+  <div class="section-header">
+    <h2 class="section-title">3D Projects</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <!--
+    IMAGE SLOTS – 3D PROJECT RENDERS
+    ──────────────────────────────────
+    Add as many items as you like.
+    Name files:  3d-01.jpg, 3d-02.jpg, 3d-03.jpg … etc.
+    Place them in the same folder as index.html.
+
+    Each .project-item can also have a caption:
+      <p class="project-caption">Your caption here</p>
+  -->
+  <div class="project-grid" id="3d-grid">
+    <div class="project-item">
+      <img src="3d-01.jpg" alt="3D render 1" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-01.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="3d-02.jpg" alt="3D render 2" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-02.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="3d-03.jpg" alt="3D render 3" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-03.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="3d-04.jpg" alt="3D render 4" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-04.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="3d-05.jpg" alt="3D render 5" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-05.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="3d-06.jpg" alt="3D render 6" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">3d-06.jpg</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     GRAPHIC DESIGN
+═══════════════════════════════ -->
+<section id="graphicdesign">
+  <div class="section-header">
+    <h2 class="section-title">Graphic Design</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <!--
+    IMAGE SLOTS – GRAPHIC DESIGN WORKS
+    ────────────────────────────────────
+    Name files:  gd-01.jpg, gd-02.jpg, gd-03.jpg … etc.
+    Place them in the same folder as index.html.
+  -->
+  <div class="project-grid" id="gd-grid">
+    <div class="project-item">
+      <img src="gd-01.jpg" alt="Graphic design 1" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-01.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="gd-02.jpg" alt="Graphic design 2" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-02.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="gd-03.jpg" alt="Graphic design 3" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-03.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="gd-04.jpg" alt="Graphic design 4" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-04.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="gd-05.jpg" alt="Graphic design 5" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-05.jpg</p>
+    </div>
+    <div class="project-item">
+      <img src="gd-06.jpg" alt="Graphic design 6" onerror="this.parentElement.classList.add('empty')">
+      <p class="project-caption">gd-06.jpg</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════
+     CONTACT
+═══════════════════════════════ -->
+<section id="contact">
+  <div class="section-header">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-divider"></div>
+  </div>
+  <p class="contact-body">
+    Interested in working together?<br>
+    Reach out and let's create something great.
+  </p>
+</section>
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+</body>
+</html>
